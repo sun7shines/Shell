@@ -1,0 +1,25 @@
+
+环境	使用vmware安装centos虚拟机,添加多块硬盘和网卡
+
+一	熟练安装centos系统，安装过程中配置网络，采用自定义分区方式。
+
+二	学习vim编辑器，包括编辑，删除，复制，粘贴，保存，退出
+
+
+三	磁盘管理，使用fdisk和parted命令，修改卷标，创建删除分区，格式化，格式化为ext4，xfs等文件系统，挂载分区修改/etc/fstab文件；掌握lvm，创建物理卷，逻辑卷组，逻辑卷
+
+四	搭建cifs（Samba）服务器，创建网络共享，并在windows上访问。
+
+五	了解ssh，sshpass，scp等网络操作命令。
+
+六	掌握ifconfig，ifup，ifdown，ethtool等网卡操作命令，iptables和network（/etc/init.d/目录下）的启动和关闭操作，并使用vim熟练修改网卡配置文件。
+
+七	使用两台centos虚拟机搭建glusterfs分布式文件系统
+
+八	掌握 df，mount，du，fuser，ps，top，iotop，tail等系统监控命令。
+
+九	使用sed，xargs，grep，find等shell命令
+
+十	使用yum，rpm （-ivh，-ql，-qf） 软件包管理命令
+
+十一	了解/boot分区，grup，kernel安装等系统启动引导相关知识
