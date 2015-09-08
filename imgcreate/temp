@@ -1,0 +1,46 @@
+./live.py-1:334:        return ["syslinux"] + LiveImageCreatorBase._get_required_packages(self)
+./live.py-1:339:    def __find_syslinux_menu(self):
+./live.py-1:341:            for dir in ("/usr/lib/syslinux/", "/usr/share/syslinux/"):
+./live.py-1:345:        raise CreatorError("syslinux not installed : "
+./live.py-1:348:    def __find_syslinux_mboot(self):
+./live.py-1:357:    def __copy_syslinux_files(self, isodir, menu, mboot = None):
+./live.py-1:363:            if os.path.exists(self._instroot + "/usr/lib/syslinux/" + f):
+./live.py-1:364:                path = self._instroot + "/usr/lib/syslinux/" + f
+./live.py-1:365:            elif os.path.exists(self._instroot + "/usr/share/syslinux/" + f):
+./live.py-1:366:                path = self._instroot + "/usr/share/syslinux/" + f
+./live.py-1:368:                raise CreatorError("syslinux not installed : "
+./live.py-1:373:    def __copy_syslinux_background(self, isodest):
+./live.py-1:375:                          "/usr/share/anaconda/boot/syslinux-vesa-splash.jpg"
+./live.py-1:380:                              "/usr/lib/anaconda-runtime/syslinux-vesa-splash.jpg"
+./live.py-1:424:    def __get_basic_syslinux_config(self, **args):
+./live.py-1:565:    def _configure_syslinux_bootloader(self, isodir):
+./live.py-1:569:        menu = self.__find_syslinux_menu()
+./live.py-1:571:        self.__copy_syslinux_files(isodir, menu,
+./live.py-1:572:                                   self.__find_syslinux_mboot())
+./live.py-1:575:        if self.__copy_syslinux_background(isodir + "/isolinux/splash.jpg"):
+./live.py-1:578:        cfg = self.__get_basic_syslinux_config(menu = menu,
+./live.py-1:684:        self._configure_syslinux_bootloader(isodir)
+匹配到二进制文件 ./live.pyo
+匹配到二进制文件 ./live.pyc
+./live.py:334:        return ["syslinux"] + LiveImageCreatorBase._get_required_packages(self)
+./live.py:339:    def __find_syslinux_menu(self):
+./live.py:341:            for dir in ("/usr/lib/syslinux/", "/usr/share/syslinux/"):
+./live.py:345:        raise CreatorError("syslinux not installed : "
+./live.py:348:    def __find_syslinux_mboot(self):
+./live.py:357:    def __copy_syslinux_files(self, isodir, menu, mboot = None):
+./live.py:363:            if os.path.exists(self._instroot + "/usr/lib/syslinux/" + f):
+./live.py:364:                path = self._instroot + "/usr/lib/syslinux/" + f
+./live.py:365:            elif os.path.exists(self._instroot + "/usr/share/syslinux/" + f):
+./live.py:366:                path = self._instroot + "/usr/share/syslinux/" + f
+./live.py:368:                raise CreatorError("syslinux not installed : "
+./live.py:373:    def __copy_syslinux_background(self, isodest):
+./live.py:375:                          "/usr/share/anaconda/boot/syslinux-vesa-splash.jpg"
+./live.py:380:                              "/usr/lib/anaconda-runtime/syslinux-vesa-splash.jpg"
+./live.py:424:    def __get_basic_syslinux_config(self, **args):
+./live.py:565:    def _configure_syslinux_bootloader(self, isodir):
+./live.py:569:        menu = self.__find_syslinux_menu()
+./live.py:571:        self.__copy_syslinux_files(isodir, menu,
+./live.py:572:                                   self.__find_syslinux_mboot())
+./live.py:575:        if self.__copy_syslinux_background(isodir + "/isolinux/splash.jpg"):
+./live.py:578:        cfg = self.__get_basic_syslinux_config(menu = menu,
+./live.py:684:        self._configure_syslinux_bootloader(isodir)
